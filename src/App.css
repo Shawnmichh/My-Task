@@ -1,0 +1,85 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.sidebar{
+  width: 220px;
+  transition: all 0.4s ease;
+}
+
+.sidebar_link{
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+  border-radius: 4px;
+}
+
+.sidebar_link:hover{
+  background-color: rgba(255,255,255,0.1);
+  padding-left: 12px;
+}
+
+.main_conten{
+  padding: 16px;
+  transition: margin-left 0.3s ease;
+}
+
+.custom_card{
+  transition: transform 0.3s ease, box-shadow 0.3 ease;
+  cursor: pointer;
+}
+
+.custom_card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.width_sidebar{
+  margin-left: 220px !important;
+}
+
+.full_width{
+  margin-left: 40px !important;
+}
+
+.menu_top {
+  top: 10px;
+  left: 10px;
+  z-index: 1050;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+.fixed_table_height{
+  max-height: 50px !important;
+  min-height: 50px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.loading_overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load_img{
+  width: 80px;
+  height: 80px;
+}
+
