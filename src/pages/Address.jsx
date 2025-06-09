@@ -76,7 +76,7 @@ export default function Address(){
                 <ul className="pagination justify-content-end">
                     {currentPage>1 &&
                         <li className="page-item" >
-                            <button className="page-link bg-primary text-white" onClick={() => setCurrentPage((number) => number - 1)}>
+                            <button className="page-link bg-primary text-dark" onClick={() => setCurrentPage((number) => number - 1)}>
                                 Prev
                             </button>
                         </li>
@@ -90,7 +90,7 @@ export default function Address(){
                     ))}
                     {currentPage < 10 &&
                         <li className="page-item" >
-                            <button className="page-link bg-primary text-white" onClick={() => setCurrentPage((number) =>number + 1)}>
+                            <button className="page-link bg-primary text-dark" onClick={() => setCurrentPage((number) =>number + 1)}>
                                 Next
                             </button>
                         </li>
