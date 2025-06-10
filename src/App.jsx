@@ -20,7 +20,7 @@ export default function App(){
       {isLoading ?(
         <Loader />):(
       <div className='d-flex'>
-        {!showSidebar && (
+        {/*{!showSidebar && (
           <button
             className="btn btn-outline-dark p-2 position-fixed"
             onClick={() => setShowSidebar(true)}
@@ -28,7 +28,8 @@ export default function App(){
             ☰
           </button>
         )}
-        {showSidebar && <Sidebar onToggle={()=>setShowSidebar(false)} />}
+        {showSidebar && <Sidebar onToggle={()=>setShowSidebar(false)} />}*/}
+        <Sidebar showSidebar={showSidebar} onToggle={() => setShowSidebar(false)}/>
         <div className='flex-grow-1'>
           <div className={`main_content ${showSidebar ? 'width_sidebar':'full_width'}`}>
             <Routes>
